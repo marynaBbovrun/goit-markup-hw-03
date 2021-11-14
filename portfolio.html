@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="enru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <!--Шапка сайта-->
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!--Шапка сайта-->
+  <header class="header">
+    <div class="container header-conteiner">
       <nav class="header-navigation">
-        <a href="/" class="logo link">
-          <span class="logo-lft">Web</span
-          ><span class="logo-right">Studio</span>
+        <a href="/" class="header-logo logo link">
+          <span class="logo-lft">Web</span><span class="logo-right">Studio</span>
         </a>
         <ul class="site-nav list">
           <li class="header-item">
@@ -33,26 +34,27 @@
           </li>
         </ul>
       </nav>
-      <a href="mailto:info@devstudio.com" class="header-mail link"
-        >info@devstudio.com</a
-      >
-      <a href="tell:+380961111111" class="header-tell link"
-        >+38 096 111 11 11</a
-      >
-    </header>
-    <!--Уникальний контент-->
-    <main>
-      <!--Види  робот-->
-      <section class="work">
+      <div class="header-connect">
+        <a href="mailto:info@devstudio.com" class="header-contact header-mail link">info@devstudio.com</a>
+        <a href="tell:+380961111111" class=" header-contact header-tell link">+38 096 111 11 11</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!--Уникальний контент-->
+  <main>
+    <!--Види  робот-->
+    <section class="work">
+      <div class="container section">
         <ul class="work-list list">
-          <li>
-            <button class="work-btn" type="button">Все</button> </li>
+          <li><button class="work-btn" type="button">Все</button></li>
           <li><button class="work-btn" type="button">Веб-сайты</button></li>
           <li><button class="work-btn" type="button">Приложения</button></li>
           <li><button class="work-btn" type="button">Дизайн</button></li>
           <li><button class="work-btn" type="button">Маркетинг</button></li>
         </ul>
-      
+
         <ul class="example-list list">
           <li class="example-item">
             <img src="./images/project1.jpg" alt="" width="370" />
@@ -72,7 +74,7 @@
           <li class="example-item">
             <img src="./images/project4.jpg" alt="" width="370" />
             <h3 class="example-caption">Проект Prime</h3>
-            <p class="example-desk"> class="example-desk"Дизайн</p>
+            <p class="example-desk">Дизайн</p>
           </li>
           <li class="example-item">
             <img src="./images/project5.jpg" alt="" width="370" />
@@ -91,7 +93,7 @@
           </li>
           <li class="example-item">
             <img src="./images/project8.jpg" alt="" width="370" />
-            <h3>Проект LAB</h3>
+            <h3 class="example-caption">Проект LAB</h3>
             <p class="example-desk">Маркетинг</p>
           </li class="example-item">
           <li>
@@ -100,23 +102,23 @@
             <p class="example-desk">Приложение</p>
           </li>
         </ul>
-      </section>
-    </main>
-    <!--Футер-->
-    <footer class="footer">
+      </div>
+    </section>
+  </main>
+  <!--Футер-->
+  <footer class="footer">
+    <div class="container">
       <a href="/" class="logo link">
-        <span class="logo-lft">Web</span><span class="logo-right">Studio</span>
+        <span class="logo-lft">Web</span><span class="logo-right-footer">Studio</span>
       </a>
 
       <address class="footer-address">
         г. Киев, пр-т Леси Украинки, 26
-        <a href="mailto:info@example.com" class="footer-mail link"
-          >info@example.com</a
-        >
-        <a href="tell:+380991111111" class="footer-tell link"
-          >+38 099 111 11 11</a
-        >
+        <a href="mailto:info@example.com" class="footer-mail link">info@example.com</a>
+        <a href="tell:+380991111111" class="footer-tell link">+38 099 111 11 11</a>
       </address>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

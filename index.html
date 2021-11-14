@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body class="page">
-    <!--Шапка страницы-->
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body class="page">
+  <!--Шапка страницы-->
+  <header class="header">
+    <div class="container header-conteiner">
       <nav class="header-navigation">
-        <a href="/" class="logo link">
-          <span class="logo-lft">Web</span
-          ><span class="logo-right">Studio</span>
+        <a href="/" class="header-logo logo link">
+          <span class="logo-lft">Web</span><span class="logo-right">Studio</span>
         </a>
         <ul class="site-nav list">
           <li class="header-item">
@@ -33,24 +36,26 @@
           </li>
         </ul>
       </nav>
-      <a href="mailto:info@devstudio.com" class="header-mail link"
-        >info@devstudio.com</a
-      >
-      <a href="tell:+380961111111" class="header-tell link"
-        >+38 096 111 11 11</a
-      >
-    </header>
+      <div class="header-connect">
+        <a href="mailto:info@devstudio.com" class="header-contact header-mail link">info@devstudio.com</a>
+        <a href="tell:+380961111111" class="header-contact header-tell link">+38 096 111 11 11</a>
+      </div>
+    </div>
+  </header>
 
-    <!--Уникальная контент-->
-    <main>
-      <!--Суть сайта-->
-      <section class="hero">
+  <!--Уникальная контент-->
+  <main>
+    <!--Суть сайта-->
+    <section class="hero">
+      <div class="hero-right">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-button">Заказать услугу</button>
-      </section>
+      </div>
+    </section>
 
-      <!--Качества-->
-      <section class="feature">
+    <!--Качества-->
+    <section class="feature">
+      <div class="container section">
         <h2 class="feature-title">Качества</h2>
         <ul class="feature list">
           <li class="feature-item">
@@ -82,33 +87,37 @@
             </p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <!--Чем мы занимаемся -->
-      <section class="classes">
-        <h2 class="classes-title">Чем мы занимаемся</h2>
+    <!--Чем мы занимаемся -->
+    <section class="classes">
+      <div class="container section">
+        <h2 class="classes-title title">Чем мы занимаемся</h2>
         <ul class="classes-list list">
-          <li>
+          <li class="classes-item">
             <a href="">
               <img src="./images/img6.jpg" alt="Робота с ноутбуком" />
             </a>
           </li>
-          <li>
+          <li class="classes-item">
             <a href="">
               <img src="./images/img7.jpg" alt="Робота с телефоном" />
             </a>
           </li>
-          <li>
+          <li class="classes-item">
             <a href="">
               <img src="./images/img8.jpg" alt="Робота с планшетом" />
             </a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <!--Наша команда-->
-      <section class="command">
-        <h2 class="command-title">Наша команда</h2>
+    <!--Наша команда-->
+    <section class="command">
+      <div class="container section">
+        <h2 class="command-title title">Наша команда</h2>
         <ul class="command-list list">
           <li class="command-item">
             <img src="./images/img.jpg" alt="Игорь Демьяненко" width="270" />
@@ -131,24 +140,24 @@
             <p class="command-desk">UI Designer</p>
           </li>
         </ul>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <!--Футер-->
-    <footer class="footer">
+  <!--Футер-->
+  <footer class="footer">
+    <div class="container">
       <a href="/" class="logo link">
-        <span class="logo-lft">Web</span><span class="logo-right">Studio</span>
+        <span class="logo-lft">Web</span><span class="logo-right-footer">Studio</span>
       </a>
 
       <address class="footer-address">
         г. Киев, пр-т Леси Украинки, 26
-        <a href="mailto:info@example.com" class="footer-mail link"
-          >info@example.com</a
-        >
-        <a href="tell:+380991111111" class="footer-tell link"
-          >+38 099 111 11 11</a
-        >
+        <a href="mailto:info@example.com" class="footer-mail link">info@example.com</a>
+        <a href="tell:+380991111111" class="footer-tell link">+38 099 111 11 11</a>
       </address>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
