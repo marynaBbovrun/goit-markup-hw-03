@@ -38,20 +38,20 @@ address {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
+   padding-left: 15px;
   padding-right: 15px;
+  
   margin: 0 auto;
   
 }
 .section{
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 .header-conteiner {
   display: flex;
   align-items: center;
 }
-.body {
+body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
   background-color: #ffffff;
@@ -68,7 +68,7 @@ address {
 
 /* site nav */
 .header {
- margin-bottom: 20px;
+ 
   border-bottom: 1px solid #ECECEC;
 }
 .header-logo {
@@ -188,16 +188,17 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondary-white-color);
- 
+  background: var(--accent-color);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
   margin: 0 auto;
+  margin-top: 30px;
   
-Radius: 4px
+ Radius: 4px
 
-rgba(0, 0, 0, 0.25)
+ rgba(0, 0, 0, 0.25)
 
 }
 .hero-right {
@@ -209,10 +210,23 @@ rgba(0, 0, 0, 0.25)
 /* feature */
 .feature {
   display: flex;
+  padding-top: 74px;
+  
 }
-.feature-title {
-  visibility: hidden;
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
+
 .feature-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -251,6 +265,10 @@ rgba(0, 0, 0, 0.25)
 .classes-title {
   
 }
+.classes-section {
+   padding-left: 15px;
+  padding-right: 15px;
+}
 .classes-list {
   display: flex;
 }
@@ -268,6 +286,10 @@ rgba(0, 0, 0, 0.25)
   margin-right: -30px;
   margin-bottom: -3px;
 }
+.command-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .command-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
@@ -280,7 +302,6 @@ rgba(0, 0, 0, 0.25)
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .command-desk {
@@ -339,7 +360,10 @@ rgba(0, 0, 0, 0.25)
 /*-------PORTFOLIO------*/
 
 /* work */
-.work {}
+.work {
+  margin-top: 94px;
+  
+}
 
 
  .work-list {
@@ -363,13 +387,15 @@ rgba(0, 0, 0, 0.25)
   padding-bottom: 6px;
   padding-right:22px;
   padding-left: 22px;
-  margin-right: 8px;
 
   }
-  .work-btn:last-child {
+  
+  .button-work {
+    margin-right: 8px;
+  }
+  .button-work:last-child {
     margin-right: 0;
   }
- 
 
 
 .work-btn:focus,
@@ -391,8 +417,8 @@ rgba(0, 0, 0, 0.25)
 
   }
   .example-box {
-    margin-top: 20px; 
-    margin-bottom: 20px;
+     padding-top: 20px; 
+    padding-bottom: 20px;
     margin-left: 24px;
     margin-right: 24px;
 
